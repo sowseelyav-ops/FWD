@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EnergiWise</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌍 EnergiWise</h1>
+    <h2>Sustainable Energy Transition Advisor</h2>
+
+    <label>Monthly Electricity Usage (kWh)</label>
+    <input type="number" id="kwh">
+
+    <label>Current Energy Source</label>
+    <select id="current">
+        <option value="coal">Coal</option>
+        <option value="grid">Grid</option>
+        <option value="solar">Solar</option>
+        <option value="wind">Wind</option>
+        <option value="hydro">Hydro</option>
+    </select>
+
+    <label>Region Type</label>
+    <select id="region">
+        <option value="sunny">Sunny Region</option>
+        <option value="windy">Windy Region</option>
+        <option value="water">Water Region</option>
+        <option value="mixed">Mixed</option>
+    </select>
+
+    <label>Priority</label>
+    <select id="priority">
+        <option value="cost">Low Cost</option>
+        <option value="eco">Eco Friendly</option>
+        <option value="balanced">Balanced</option>
+    </select>
+
+    <button onclick="analyze()">Analyze</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
